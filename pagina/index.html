@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .principal {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #0078D7;
+            color: white;
+        }
+
+        header h1 {
+            margin: 10px 0;
+            font-size: 2em;
+        }
+
+        .logo img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0078D7;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #0056a3;
+        }
+
+        .seccion {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .seccion1 {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: center;
+            padding: 15px;
+            max-width: 300px;
+            flex: 1 1 calc(25% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .seccion1 img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .seccion1 p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer .img1 img, footer .img2 img {
+            max-width: 80px;
+            margin: 10px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        footer strong {
+            color: #0078D7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="principal">
+        <!-- Encabezado -->
+        <header>
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo principal de la pagina">
+            </div>
+            <h1>Bienvenido a Nuestro Sitio Web</h1>
+        </header>
+
+        <!-- Barra de Navegacion -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+            <a href="promociones.html">Promociones</a>
+        </nav>
+
+        <!-- Seccion de Servicios -->
+        <div class="seccion">
+            <div class="seccion1">
+                <img src="imagen1.jpg" alt="Imagen representativa de componentes en stock">
+                <p>Tenemos todo tipo de componentes en stock. <strong>¡Visualizalos dando clic aqui!</strong></p>
+            </div>
+            <div class="seccion1">
+                <img src="imagen2.jpg" alt="Imagen de cableado ordenado">
+                <p>Arreglamos el cableado de tu PC de escritorio. Quedara al <strong>100%</strong> ordenado y visualmente estetico.</p>
+            </div>
+            <div class="seccion1">
+                <img src="imagenes.jpg" alt="Soporte tecnico en tienda y en linea">
+                <p>Ofrecemos soporte tecnico en tienda y <strong>en linea</strong>. ¡Siempre estamos para ayudarte!</p>
+            </div>
+            <div class="seccion1">
+                <img src="fondo.jpg" alt="Imagen decorativa de descuento especial">
+                <p>Compra cualquiera de nuestros equipos preconfigurados. <strong>¡Pide el tuyo ya!</strong> Obten un descuento especial al responder una pregunta correctamente.</p>
+            </div>
+        </div>
+
+        <!-- Pie de pagina -->
+        <footer>
+            <div class="img1">
+                <img src="fondo.jpg" alt="Fondo decorativo del footer">
+            </div>
+            <div class="titulo">
+                <p><strong>El mejor consejo que podemos darte:</strong></p>
+                <p>Para mas informacion, busca tutoriales en <strong>YouTube</strong>. Aprende y hazlo tu mismo. ¡Es divertido!</p>
+            </div>
+            <div class="img2">
+                <img src="logo.jpg" alt="Logo decorativo en el footer">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

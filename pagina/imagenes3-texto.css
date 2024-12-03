@@ -1,0 +1,168 @@
+body {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   font-family: Arial, sans-serif;
+   background-color: #f0f8ff; 
+}
+
+.principal {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+header {
+   padding: 10px;
+   background-color: #ff5722; 
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+   border-bottom: 4px solid #004d40; 
+}
+
+header .logo {
+   display: flex;
+   width: 40%;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+header h1 {
+   display: flex;
+   width: 60%;
+   margin: 0;
+   padding: 0;
+   justify-content: center;
+   align-items: center;
+   font-size: 2rem;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   background-color: #00796b; 
+   padding: 10px;
+}
+
+nav a {
+   color: #ffeb3b; 
+   padding: 10px 20px;
+   text-decoration: none;
+   font-weight: bold;
+   transition: background 0.3s ease;
+}
+
+nav a:hover {
+   background-color: #004d40; 
+   color: white;
+}
+
+.seccion {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin: 10px 0;
+   justify-content: center;
+   gap: 10px;
+}
+
+.seccion1, .seccionF {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 300px;
+}
+
+.seccion1 img, .seccionf img {
+   width: 100%;
+   max-width: 350px;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.seccion1 p, .seccionf p {
+   max-width: 350px;
+   padding: 5px;
+   text-align: center;
+}
+
+.Formu {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 20px;
+}
+
+.formulario {
+   display: flex;
+   flex: 1;
+   background-color: #ff9800; 
+   color: black;
+   border-radius: 8px;
+   padding: 20px;
+}
+
+input {
+   color: black;
+   padding: 10px;
+   border: 2px solid #00796b; 
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
+
+footer {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 10px;
+   background-color: #004d40; 
+   color: white;
+   justify-content: space-between;
+   gap: 10px;
+}
+
+footer .titulo, footer .img1, footer .img2 {
+   display: flex;
+   flex: 1;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+footer img {
+   max-width: 100px;
+   border-radius: 50%;
+   margin: 5px 0;
+}
+
+@media screen and (max-width: 1000px) {
+   .seccion1 img, .seccionf img {
+       max-width: 300px;
+       width: 100%;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   nav {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   header h1 {
+       font-size: 1.5rem;
+   }
+
+   .formulario {
+       flex: 100%;
+   }
+}
